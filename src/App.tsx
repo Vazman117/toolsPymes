@@ -9,8 +9,8 @@ function Header() {
         {/* Logo Izquierdo - Tu Empresa */}
         <div className="fiscal-logo-container">
           <img 
-            src="/src/images/favicon_io (1)/android-chrome-192x192.png" 
-            alt="Logo Empresa" 
+            src="/images/favicon_io (1)/android-chrome-192x192.png" 
+            alt="Herramientas para Pymes" 
             className="fiscal-logo fiscal-logo-color"
           />
         </div>
@@ -23,8 +23,8 @@ function Header() {
         {/* Logo Derecho - Herramienta */}
         <div className="fiscal-logo-container">
           <img 
-            src="/src/images/simuladorFiscal.png" 
-            alt="Logo Herramienta" 
+            src="/images/simuladorFiscal.png" 
+            alt="Simulador Fiscal" 
             className="fiscal-logo fiscal-logo-white"
           />
         </div>
