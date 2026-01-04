@@ -1,0 +1,210 @@
+/* Reset básico */
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  background: whitesmoke;
+  color: #111;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Contenedor principal */
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
+  padding-bottom: 0px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container1 {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+/* Encabezado */
+.header {
+  margin-bottom: 12px;
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin: 0 0 4px 0;
+}
+
+.subtitle {
+  font-size: 0.9rem;
+  color: #555;
+  margin: 0;
+}
+
+/* Layout de dos columnas */
+.grid-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  height: calc(100vh - 129px); /* Deja espacio para header y disclaimer */
+  overflow: hidden;
+  min-height: 0;
+}
+
+/* Secciones con scroll interno */
+section {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  height: 100%;
+}
+
+section h2 {
+  font-size: 1.1rem;
+  margin: 0 0 12px 0;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+/* Formulario */
+label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+label > select,
+label > input {
+  width: 100%;
+  padding: 8px 10px;
+  margin-top: 4px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  font-size: 0.95rem;
+  transition: border-color 0.2s;
+}
+
+label > select:focus,
+label > input:focus {
+  outline: none;
+  border-color: #111;
+}
+
+small {
+  display: block;
+  margin-top: 4px;
+  color: #666;
+  font-size: 0.75rem;
+}
+
+/* Botón */
+button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  background: #111;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background: #333;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+/* Resultados */
+.result-item {
+  margin-bottom: 14px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.result-item:last-child {
+  border-bottom: none;
+}
+
+.result-item strong {
+  display: block;
+  font-size: 0.8rem;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 4px;
+}
+
+.result-item p {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin: 0;
+  color: #111;
+}
+
+.result-item small {
+  color: #777;
+  font-size: 0.8rem;
+}
+
+/* Advertencia */
+.disclaimer {
+  font-size: 0.75rem;
+  color: #999;
+  margin-top: 12px;
+  padding-bottom: 18px;
+  text-align: center;
+}
+
+/* Responsive - tablet y móvil */
+@media (max-width: 968px) {
+  .grid-layout {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    height: auto;
+  }
+  
+  html, body {
+    overflow: auto;
+    height: auto;
+  }
+  
+  .container {
+    height: auto;
+  }
+}
+
+/* Scrollbar personalizado */
+section::-webkit-scrollbar {
+  width: 8px;
+}
+
+section::-webkit-scrollbar-track {
+  background: #f7f7f8;
+  border-radius: 4px;
+}
+
+section::-webkit-scrollbar-thumb {
+  background: #ddd;
+  border-radius: 4px;
+}
+
+section::-webkit-scrollbar-thumb:hover {
+  background: #bbb;
+}

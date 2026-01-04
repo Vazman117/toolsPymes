@@ -1,0 +1,116 @@
+/* Header Profesional */
+.fiscal-header {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  padding: 0.3rem 2rem;
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  border-bottom: 3px solid #000000;
+}
+
+.fiscal-header-wrapper {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+/* Logos */
+.fiscal-logo-container {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.fiscal-logo {
+  height: 50px;
+  width: auto;
+  max-width: 180px;
+  object-fit: contain;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Logo izquierdo - Mantiene colores originales */
+.fiscal-logo-color {
+  filter: none;
+}
+
+/* Logo derecho - Se convierte a blanco */
+.fiscal-logo-white {
+  filter: brightness(0) invert(1);
+}
+
+.fiscal-logo:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+/* Título Central */
+.fiscal-title-wrapper {
+  flex: 1 1 auto;
+  text-align: center;
+}
+
+.fiscal-title-wrapper h1 {
+  margin: 0;
+  color: #ffffff;
+  font-size: 1.75rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .fiscal-header {
+    padding: 0.75rem 1rem;
+  }
+
+  .fiscal-header-wrapper {
+    gap: 1rem;
+  }
+
+  .fiscal-title-wrapper h1 {
+    font-size: 1.2rem;
+  }
+
+  .fiscal-logo {
+    height: 40px;
+    max-width: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  .fiscal-header-wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .fiscal-title-wrapper {
+    order: -1;
+    flex: 1 1 100%;
+    margin-bottom: 0.5rem;
+  }
+
+  .fiscal-title-wrapper h1 {
+    font-size: 1rem;
+  }
+
+  .fiscal-logo {
+    height: 35px;
+  }
+}
+
+/* Variante: Si prefieres fondo blanco profesional */
+/*
+.fiscal-header {
+  background: #ffffff;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.fiscal-title-wrapper h1 {
+  color: #1e3c72;
+  text-shadow: none;
+}
+*/

@@ -1,0 +1,19 @@
+.cuadro-resultados{
+    overflow-y: hidden;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    box-shadow: none;
+    padding: 0px;
+}
+
+.resultados-div {
+ flex-direction: column;
+ display: flex;
+ gap: 3px;
+}
+
+p {
+    margin: 0;
+}
