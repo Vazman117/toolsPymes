@@ -53,7 +53,7 @@ h1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 16px;
-  height: calc(100vh - 129px); /* Deja espacio para header y disclaimer */
+  height: calc(100vh - 155px); /* Deja espacio para header y disclaimer */
   overflow: hidden;
   min-height: 0;
 }
