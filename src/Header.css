@@ -1,8 +1,8 @@
 /* Header Profesional */
 .fiscal-header {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-  padding: 0.8rem 2rem;
-  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  padding: 1.1rem 2rem;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
   border-bottom: 3px solid #000000;
 }
 
@@ -32,7 +32,11 @@
 
 /* Logo izquierdo - Mantiene colores originales */
 .fiscal-logo-color {
-  filter: none;
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+  transition: transform 0.3s ease;
 }
 
 /* Logo derecho - Se convierte a blanco */

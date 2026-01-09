@@ -1,0 +1,205 @@
+/* ===============================
+   GLOBAL HOME STYLES
+================================ */
+
+.home-container {
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #f8fafc, #f1f5f9);
+}
+
+/* ===============================
+   HEADER HOME
+================================ */
+
+.home-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 20px 24px;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.home-logo {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.home-logo:hover {
+  transform: scale(1.05);
+}
+
+.home-header h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: -0.025em;
+  margin: 0;
+}
+
+/* ===============================
+   TOOLS GRID SECTION
+================================ */
+
+.tools-grid {
+  max-width: 83%;
+  margin: 0 auto;
+  padding: 16px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 24px;
+}
+
+/* ===============================
+   TOOL CARD - DISEÑO PROFESIONAL
+================================ */
+
+.tool-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 18px 24px;
+  
+  text-decoration: none;
+  cursor: pointer;
+  overflow: hidden;
+  
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Efecto de fondo decorativo */
+.tool-card::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(59, 130, 246, 0.04) 0%, transparent 70%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Hover effect */
+.tool-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  border-color: #3b82f6;
+}
+
+/* Contenedor del icono */
+.tool-icon {
+  position: relative;
+  width: 64px;
+  height: 64px;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 1;
+}
+
+.tool-card:hover .tool-icon {
+  transform: scale(1.1);
+}
+
+/* La imagen dentro del icono */
+.tool-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: all 0.3s ease;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+}
+
+.tool-card:hover img {
+  filter: drop-shadow(0 4px 8px rgba(59, 130, 246, 0.3));
+}
+
+/* Texto de la herramienta */
+.tool-card span {
+  position: relative;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #0f172a;
+  text-align: center;
+  line-height: 1.5;
+  z-index: 1;
+  transition: color 0.3s ease;
+}
+
+.tool-card:hover span {
+  color: #3b82f6;
+}
+
+/* ===============================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 768px) {
+  .home-header {
+    padding: 24px 16px;
+  }
+
+  .home-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .home-logo {
+    width: 48px;
+    height: 48px;
+  }
+
+  .tools-grid {
+    padding: 48px 16px;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 20px;
+  }
+
+  .tool-card {
+    padding: 28px 20px;
+  }
+
+  .tool-icon {
+    width: 56px;
+    height: 56px;
+  }
+
+  .tool-card span {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-header h1 {
+    font-size: 1.25rem;
+  }
+
+  .tools-grid {
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  }
+
+  .tool-card {
+    padding: 24px 16px;
+  }
+
+  .tool-icon {
+    width: 48px;
+    height: 48px;
+  }
+}
