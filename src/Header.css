@@ -44,6 +44,10 @@
   filter: brightness(0) invert(1);
 }
 
+.precio-logo-white {
+  filter: brightness(0) invert(1);
+}
+
 .fiscal-logo:hover {
   transform: scale(1.05);
   opacity: 0.9;

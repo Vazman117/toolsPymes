@@ -23,6 +23,15 @@ function Home() {
           <span>Simulador Fiscal</span>
         </Link>
 
+        <Link to="/fijacion-precios" className="tool-card">
+          <img 
+            src="/images/calculoPrecios.png"
+            alt="Cálculo de Precios"
+            className="tool-icon"
+          />
+          <span>Cálculo de Precios</span>
+        </Link>
+
         {/* Futuras herramientas */}
         {/* 
         <Link to="/otra-herramienta" className="tool-card">
