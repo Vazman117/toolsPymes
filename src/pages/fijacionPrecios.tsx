@@ -123,7 +123,7 @@ export default function FijacionPrecios() {
             <h2>1. Análisis de costos</h2>
 
             <label>
-              Costos fijos mensuales
+              Gastos fijos mensuales
               <input
                 type="number"
                 value={costos.costosFijosMensuales}
